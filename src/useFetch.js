@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-const url = 'https://api.github.com/users/john-smilga/followers?per_page=100'
+const url = process.env.REACT_APP_END_POINT
 
 export const useFetch = () => {
   const [loading, setLoading] = useState(true)
